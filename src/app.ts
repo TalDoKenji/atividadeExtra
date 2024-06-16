@@ -20,7 +20,7 @@ class App {
             methods: ['GET', 'POST', 'PUT', 'DELETE']
         }));
         this.express.use(express.json());
-        this.express.use(express.static(path.join(__dirname, '../todo')));
+        this.express.use(express.static(path.join(__dirname, '../todoList')));
     }
 
     public async database() {
